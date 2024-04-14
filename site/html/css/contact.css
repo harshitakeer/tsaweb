@@ -15,25 +15,23 @@ body {
     color: #333;
 }
 
-  
-
-/* Navigation Bar */
 nav {
-    background-color: #005229; /* A deep teal background */
-    color: #005229;
-    text-align: center;
+    background: #34495e;
     padding: 10px 0;
-    position: sticky; /* Make navbar stick to the top of the page */
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.navbar-logo {
-    height: 30px; /* Or whatever size fits your design */
-    width: auto;
-    vertical-align: middle;
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
 }
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
 
 .content-section {
     background: white;
@@ -51,13 +49,6 @@ p {
     font-size: 1.2em;
 }
 
-  
-.nav-container {
-    display: flex;
-    justify-content: space-between; /* Space items nicely */
-    align-items: center;
-    padding: 0 20px; /* Add some padding on the sides */
-}
 
 .logo {
     display: flex;
@@ -65,7 +56,7 @@ p {
 }
 
 .logo img {
-    max-height: 50px; /* Adjust based on your logo's size */
+    max-height: 50px; 
     margin-right: 20px;
 }
 
@@ -76,27 +67,8 @@ p {
     text-transform: uppercase;
 }
 
-.nav-links {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 20px; /* Adds space between links */
-}
 
-.nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 7px 15px;
-    border-radius: 5px; /* Rounded corners for links */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
-.nav-links a:hover, .nav-links a.active {
-    background-color: #A98660; /* A bright red for contrast */
-    color: #ffffff;
-}
-
-/* Responsive Navigation Bar */
 @media screen and (max-width: 768px) {
     .nav-container {
         flex-direction: column;
@@ -110,7 +82,7 @@ p {
     
     .nav-links a {
         width: 100%;
-        text-align: center; /* Center links text */
+        text-align: center; 
     }
 
     
@@ -151,6 +123,8 @@ button[type="submit"]:hover {
 
 footer {
     text-align: center;
-    margin-top: 20px;
+    padding: 20px;
+    background-color: #276749;
+    color: white;
 }
 
