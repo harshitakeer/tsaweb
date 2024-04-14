@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    background-color: rgb(189, 215, 189);
 }
 
 
@@ -23,6 +26,7 @@ body {
 .carousel-slide img {
     width: 100%;
     height: auto;
+    border: 5px solid#D4494C;
 }
 
 .carousel-caption {
@@ -35,8 +39,19 @@ body {
     padding: 10px;
 }
 
-.carousel-caption h2, .carousel-caption p {
+.carousel-caption h1, .carousel-caption p {
     margin: 5px 0;
+    color: white;
+}
+
+h1{
+    color: rgb(95, 91, 91);
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    color:rgb(95, 91, 91);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .prev-btn, .next-btn {
@@ -66,5 +81,13 @@ footer {
     background-color: #276749;
     color: white;
 }
+
+footer p {
+    text-align: center;
+    padding: 20px;
+    background-color: #276749;
+    color: white;
+}
+
 
 
