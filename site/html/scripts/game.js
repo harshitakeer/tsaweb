@@ -26,7 +26,7 @@ function generateWind() {
   currentWindmillStage =
     currentWindmillStage < 4 ? currentWindmillStage + 1 : 1;
   document.getElementById("windmill").style.backgroundImage =
-    `url('photos/windmill${currentWindmillStage}.png')`;
+    `url('../photos/windmill${currentWindmillStage}.png')`;
 
   // Increment click count and update town stage if necessary
   clickCount++;
@@ -69,7 +69,7 @@ function restartGame() {
 
   // Reset the windmill and town to their initial states
   document.getElementById("windmill").style.backgroundImage =
-    "url('photos/windmill1.png')";
+    "url('../photos/windmill1.png')";
   document.getElementById("town").className = "unlit";
   document.getElementById("town").style.display = "block"; // Make sure town is visible
   document.getElementById("windmill").style.display = "block"; // Ensure windmill is visible
