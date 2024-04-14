@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const revealElements = document.querySelectorAll('.solution');
 
-    // Initially hide elements
     revealElements.forEach(element => {
         element.classList.add('hidden');
     });
@@ -10,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const windowHeight = window.innerHeight;
         revealElements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
-            if (elementTop < windowHeight - 100) { // Adjust if necessary
+            if (elementTop < windowHeight - 100) { 
                 element.classList.remove('hidden');
             }
         });
@@ -28,9 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const animate = () => {
                 const value = +counter.getAttribute('data-target');
                 const data = +counter.innerText;
-
-                const time = value / 200; // Adjust the speed here
-                
+                const time = value / 200; 
                 if(data < value) {
                     counter.innerText = Math.ceil(data + time);
                     setTimeout(animate, 1);
@@ -42,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Check if counters are in viewport
     const isInViewport = (elem) => {
         const bounding = elem.getBoundingClientRect();
         return (
@@ -53,11 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     };
 
-    // Run counters when they're visible in the viewport
     const scrollHandler = () => {
         if (isInViewport(document.querySelector('.counters-container'))) {
             runCounters();
-            // Remove the event listener after counters have animated
             document.removeEventListener('scroll', scrollHandler);
         }
     };
