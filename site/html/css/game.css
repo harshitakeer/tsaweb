@@ -150,7 +150,7 @@ nav {
 }
 
 #windmill {
-    background-image: url('photos/windmill1.png');
+    background-image: url('../photos/windmill1.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
