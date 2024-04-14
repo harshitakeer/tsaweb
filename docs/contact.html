@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ECOvate</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="home.html"><img src="../photos/house.png" alt="ECOvate" class="navbar-logo"></a></li>
+                <li><a href="about.html">Our Mission</a></li>
+                <li><a href="solutions.html">Our Solutions</a></li>
+                <li><a href="rebates.html">Tax Rebates & Incentives</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="game.html">Game!</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    
+            <img src="../photos/ecohalf.png" alt="ECOvate Logo" class="navbar-logo-right">
+    
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="content-section">
+        <h1>Contact Us</h1>
+        <p>Have questions or need assistance? Fill out our contact form, and we'll get in touch with you shortly.</p>
+        <form id="contact-form" method = "post" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© ECOvate. All rights reserved.</p>
+</footer>
+<script src="../scripts/contact.js"></script>
+
+</body>
+</html>
+
+

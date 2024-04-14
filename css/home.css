@@ -1,0 +1,94 @@
+
+body, h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+    color: #fff;
+    text-align: center;
+
+}
+
+
+
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 0% 50%; }
+    100% { background-position: 0% 0%; }
+  }
+  
+  .ecovate {
+    font-size: 100px; 
+    font-family: 'Kelin Eator';
+    font-weight: bold;
+    background: linear-gradient(0deg, #D4494C 30%, #ede9e9 70%); 
+    background-size: 100% 200%; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline;
+    animation: gradientAnimation 10s ease infinite; 
+  }
+  
+  .vate {
+    background: none;
+    font-family: 'Kelin Eator';
+    font-weight: normal;
+    -webkit-text-fill-color: initial; 
+  }
+  
+
+h1 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+  
+

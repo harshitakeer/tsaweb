@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Information - ECOvate</title>
+    <link rel="stylesheet" href="../css/rebates.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="home.html"><img src="../photos/house.png" alt="ECOvate" class="navbar-logo"></a></li>
+                <li><a href="about.html">Our Mission</a></li>
+                <li><a href="solutions.html">Our Solutions</a></li>
+                <li><a href="rebates.html">Tax Rebates & Incentives</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="game.html">Game!</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    
+            <img src="../photos/ecohalf.png" alt="ECOvate Logo" class="navbar-logo-right">
+    
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="General Information">
+        <h2>General Information</h2>
+        <p>Investment Tax Credit (ITC) is when individuals can deduct a percentage of the cost of purchasing renewable energy systems or energy-efficient equipment from their taxes.</p>
+        <p>Production Tax Credit (PTC) is when tax credit is provided for each unit of renewable energy produced over a ccertain period, so to encourage the production of clean energy.</p>
+    </section>
+    
+    <section id="state-incentives">
+        <h2>State Incentives</h2>
+        <p>Overview of state-specific incentives available. Select your state for more details.</p>
+        <select id="state-selector" onchange="updateStateIncentives()">
+            <option value="">Select Your State</option>
+            <option value="State1">California</option>
+            <option value="State2">Texas</option>
+            <option value="State3">New York</option>
+            <option value="State4">Florida</option>
+            <option value="State5">Illinois</option>
+
+        </select>
+            <div id="state-specific-info-State1" class="state-info" style="display:none;">
+                <p>Offers Residential Renewable Energy Tax Credit for solar energy systems installed on residential properties. This credit can be up to 30% of the total system cost.</p>
+                <p>Also offers Self-Generation Incentive Program (SGIP), which provides rebates for qualifying energy storage systems installed on residential and commercial properties.</p>
+            </div>
+            <div id="state-specific-info-State2" class="state-info" style="display:none;">
+                <p>Offers Property Tax Exemption for Solar and Wind Energy Devices, which exempts the added value of solar or wind energy systems from property taxes.</p>
+            </div>
+            <div id="state-specific-info-State3" class="state-info" style="display:none;">
+                <p>Offers the Residential Solar Tax Credit, which provides a tax credit of up to 25% of the eligible costs of a soler energy system, maxed out at $5,000.</p>
+                <p>Offers the NY-Sun Initiative, which provides incentives for solar energy systems. These incentives vary depending on the size and type of system installed.</p>
+            </div>
+            <div id="state-specific-info-State4" class="state-info" style="display:none;">
+                <p>Offers sales tax exemptions for solar energy systems installed on residental properties.</p>
+            </div>
+            <div id="state-specific-info-State5" class="state-info" style="display:none;">
+                <p>Offers the Illinois Shines Program, which offers incentives for solar energy systems through Renewabble Energy Credits (RECs) and Solar Renewable Energy Credits (SRECs).</p>
+                <p> This program provides financial incentives based on the amount of energy produced buy the system.</p>
+            </div>
+
+    </section>
+</main>
+
+<footer>
+    <p>© ECOvate. All rights reserved.</p>
+</footer>
+
+<script src="../scripts/rebates.js"></script>
+</body>
+</html>
