@@ -2,7 +2,7 @@
 
 body, h2, p {
     font-family: 'Open Sans', sans-serif;
-    cursor: url('../photos/leaf.png'), auto;
+    cursor: url('photos/leaf.png'), auto;
 }
 
 body {
