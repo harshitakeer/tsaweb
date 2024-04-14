@@ -164,12 +164,12 @@ nav {
 }
 
 
-.unlit { background-image: url('photos/unlittown.png'); }
-.partial1 { background-image: url('photos/partialtown1.png'); }
-.partial2 { background-image: url('photos/partialtown2.png'); }
-.partial3 { background-image: url('photos/partialtown3.png'); }
-.partial4 { background-image: url('photos/partialtown4.png'); }
-.fullylit { background-image: url('photos/fullylittown.png'); }
+.unlit { background-image: url('../photos/unlittown.png'); }
+.partial1 { background-image: url('../photos/partialtown1.png'); }
+.partial2 { background-image: url('../photos/partialtown2.png'); }
+.partial3 { background-image: url('../photos/partialtown3.png'); }
+.partial4 { background-image: url('../photos/partialtown4.png'); }
+.fullylit { background-image: url('../photos/fullylittown.png'); }
 
 
 
