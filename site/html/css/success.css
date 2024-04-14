@@ -1,59 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
 .carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.carousel {
     display: flex;
-    align-items: stretch;
-    position: relative;
     overflow: hidden;
 }
 
+.carousel-slide {
+    flex: 0 0 auto;
+    transition: transform 0.5s ease;
+}
 
 .carousel-slide img {
     width: 100%;
     height: auto;
 }
 
-
-.carousel-slide {
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0; /* Default all hidden */
+    padding: 10px;
 }
 
-.carousel-slide:first-of-type {
-    opacity: 1; /* Make the first slide visible by default */
+.carousel-caption h2, .carousel-caption p {
+    margin: 5px 0;
 }
 
-
-#prev-slide, #next-slide {
+.prev-btn, .next-btn {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 10px 20px; /* Increased padding for larger click area */
-    background-color: #4CAF50; /* Adjusted to a solid color for visibility */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    z-index: 100; /* Ensured it's above other elements */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Optional: Makes text bold */
-    min-width: 50px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    font-size: 16px;
-    background-color: #4CAF50; /* Button background */
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    cursor: pointer;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
+    outline: none;
+    padding: 10px;
+    z-index: 100;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #276749;
+    color: white;
 }
 
 
-#prev-slide {
-    left: 10px;
-}
-
-#next-slide {
-    right: 10px;
-}
