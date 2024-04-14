@@ -1,5 +1,6 @@
 .carousel-container {
     display: flex;
+<<<<<<< HEAD
     align-items: stretch; /* Make child elements fill the container height */
 }
 .carousel-slide {
@@ -9,15 +10,42 @@
 }
 
 
+=======
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+>>>>>>> c66bea5 (TSAWeb)
 .carousel-slide img {
     width: 100%;
     height: auto;
 }
 
+<<<<<<< HEAD
+=======
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Default all hidden */
+}
+
+.carousel-slide:first-of-type {
+    opacity: 1; /* Make the first slide visible by default */
+}
+
+
+>>>>>>> c66bea5 (TSAWeb)
 #prev-slide, #next-slide {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+<<<<<<< HEAD
     padding: 10px 20px; /* Increased padding for larger click area */
     background-color: #4CAF50; /* Adjusted to a solid color for visibility */
     color: #fff;
@@ -29,6 +57,19 @@
 }
 
 
+=======
+    min-width: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 16px;
+    background-color: #4CAF50; /* Button background */
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+>>>>>>> c66bea5 (TSAWeb)
 #prev-slide {
     left: 10px;
 }
@@ -37,3 +78,7 @@
     right: 10px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c66bea5 (TSAWeb)
