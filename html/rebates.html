@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ECOvate</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="home.html"><img src="../photos/house.png" alt="ECOvate" class="navbar-logo"></a></li>
+                <li><a href="about.html">Our Mission</a></li>
+                <li><a href="solutions.html">Our Solutions</a></li>
+                <li><a href="rebates.html">Tax Rebates & Incentives</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="game.html">Your turn</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    
+            <img src="../photos/ecohalf.png" alt="ECOvate Logo" class="navbar-logo-right">
+    
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section id="General Information">
+        <h2>General Information</h2>
+        <p>Investment Tax Credit (ITC) is when individuals can deduct a percentage of the cost of purchasing renewable energy systems or energy-efficient equipment</p>
+        <!-- Additional details here -->
+    </section>
+    
+    <section id="state-incentives">
+        <h2>State Incentives</h2>
+        <p>Overview of state-specific incentives available. Select your state for more details.</p>
+        <select id="state-selector" onchange="updateStateIncentives()">
+            <option value="">Select Your State</option>
+            <option value="State1">State 1</option>
+            <option value="State2">State 2</option>
+            <!-- Add more states as options here -->
+        </select>
+        <div id="state-specific-info">
+            <!-- State-specific information will be displayed here -->
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© ECOvate. All rights reserved.</p>
+</footer>
+
+<script src="../scripts/contact.js"></script>
+</body>
+</html>

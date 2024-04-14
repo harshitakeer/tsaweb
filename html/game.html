@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOvate</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+<body>
+
+
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="home.html"><img src="../photos/house.png" alt="ECOvate" class="navbar-logo"></a></li>
+                <li><a href="about.html">Our Mission</a></li>
+                <li><a href="solutions.html">Our Solutions</a></li>
+                <li><a href="rebates.html">Tax Rebates & Incentives</a></li>
+                <li><a href="success.html">Success Stories</a></li>
+                <li><a href="game.html">Your turn</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    
+            <img src="../photos/ecohalf.png" alt="ECOvate Logo" class="navbar-logo-right">
+    
+        </div>
+    </nav>
+
+    <div id="title-and-instructions" style="text-align: center; position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">
+        <h1>Windmill Energy Game</h1>
+        <p>Click the windmill to generate energy and light up the town before time runs out!</p>
+    </div>
+        
+    <div id="game-area" style="display: none;">
+        <div id="timer">Time left: <span id="time-display">60</span> seconds</div>
+        <div id="game">
+            <div id="windmill" onclick="generateWind()"></div>
+            <div id="town" class="unlit"></div>  <!-- Set the initial class to 'unlit' -->
+            <div id="win-message" class="message-box">You win! Click to restart.</div>
+            <div id="lose-message" class="message-box">Game Over. Try again?</div>
+            <div id="message-box" class="message-box" style="display: none;"></div>
+            
+        </div>
+        <div id="game-over" style="display: none;">
+            <p id="game-over-message"></p>
+            <button onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+    <button id="start-button">Start Game</button>
+    <script src="../scripts/game.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,98 @@
+/* Navigation Bar */
+nav {
+    background-color: #005229; /* A deep teal background */
+    color: #005229;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky; /* Make navbar stick to the top of the page */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo {
+    height: 30px; /* Or whatever size fits your design */
+    width: auto;
+    vertical-align: middle;
+}
+
+.navbar-logo-right {
+    height: 400px; 
+    width: auto; 
+    margin-left: auto; 
+    margin-right: -100px; 
+    flex-shrink: 0; 
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; /* Fixing navbar height */
+    padding: 0 20px; /* Adjusting padding for breathing space */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px; /* Adjust based on your logo's size */
+    margin-right: 20px;
+}
+
+.logo-text {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 7px 15px;
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #A98660; /* A bright red for contrast */
+    color: #ffffff;
+}
+
+/* Responsive Navigation Bar */
+@media screen and (max-width: 768px) {
+    .navbar-logo-right {
+        max-height: 40px; /* Smaller logo for smaller screens */
+        padding: 4px 0;
+    }
+    .nav-container {
+        padding: 0 10px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        width: 100%;
+        text-align: center; /* Center links text */
+    }
+    
+
+    
+}
